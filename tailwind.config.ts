@@ -18,6 +18,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+				playfair: ["Playfair Display", "serif"],
+				poppins: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+				mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular", "monospace"],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
