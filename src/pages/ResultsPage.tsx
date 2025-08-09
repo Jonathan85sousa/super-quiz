@@ -25,7 +25,7 @@ const ResultsPage = () => {
 
   if (!gameState.isGameFinished) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-700 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Card className="bg-white/10 backdrop-blur-sm border-white/20 max-w-md w-full mx-4">
           <CardHeader className="text-center">
             <CardTitle className="text-white">Nenhum jogo concluído</CardTitle>
@@ -73,7 +73,7 @@ const ResultsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-700">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">

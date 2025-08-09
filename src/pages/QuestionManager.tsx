@@ -61,7 +61,7 @@ const QuestionManager = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-600 via-blue-600 to-purple-700">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-8">
           <div>

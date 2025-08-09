@@ -23,12 +23,12 @@ interface AppearanceContextType {
 }
 
 const defaultSettings: AppearanceSettings = {
-  gameTitle: "Puzzle Play Quiz",
+  gameTitle: "QUIZ MASTER",
   logoUrl: "",
-  backgroundMode: "color",
-  backgroundColor: "0 0% 100%", // white
-  gradientFrom: "240 5% 96%",
-  gradientTo: "240 5% 92%",
+  backgroundMode: "gradient",
+  backgroundColor: "0 0% 100%", // fallback
+  gradientFrom: "262 83% 58%",
+  gradientTo: "217 91% 60%",
   backgroundImageUrl: "",
   bodyFont: "sans",
   headingFont: "playfair",

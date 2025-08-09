@@ -157,7 +157,7 @@ const GamePage = () => {
 
   if (!gameState.isGameActive && gameState.questions.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <Card className="bg-white/10 backdrop-blur-sm border-white/20 max-w-md w-full mx-4">
           <CardHeader className="text-center">
             <div className="mx-auto p-4 bg-blue-500/20 rounded-full w-fit mb-4">
@@ -216,7 +216,7 @@ const GamePage = () => {
 
   if (!gameState.isGameActive || gameState.questions.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-white text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-white mx-auto mb-4"></div>
           <p>Carregando jogo...</p>
@@ -229,7 +229,7 @@ const GamePage = () => {
   const progress = ((gameState.currentQuestionIndex + 1) / gameState.questions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">

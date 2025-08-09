@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, Settings, Play, Trophy } from 'lucide-react';
+import { useAppearance } from '@/contexts/AppearanceContext';
 
 const Index = () => {
+  const { settings } = useAppearance();
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
@@ -15,7 +17,7 @@ const Index = () => {
             </div>
           </div>
           <h1 className="text-6xl font-bold text-white mb-4 animate-fade-in">
-            Quiz Master
+            {settings.gameTitle}
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto animate-fade-in">
             Desafie seus conhecimentos com nosso jogo de perguntas e respostas! 
